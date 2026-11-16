@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Conta | La Bella Pizza</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dados.css">
+
+    <script src="script.js" defer></script>
+    <script src="carrinho.js" defer></script>
+    <script src="meus-dados.js" defer></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <div class="logo">
+            <a href="index.html">
+                <img src="Imagens/logo.png" data-imagem="logo" alt="La Bella Pizza">
+            </a>
+        </div>
+
+        <div class="acoes">
+
+            <a href="cardapio.html" class="botao contorno">Peça agora</a>
+
+            <a href="carrinho.html" class="icone-link">
+                <img src="Imagens/carrinho.png" data-imagem="carrinho" alt="Carrinho">
+            </a>
+
+            <button id="menuBtn" class="botao-menu" aria-label="Abrir menu">
+                <img src="Imagens/menu.png" data-imagem="menu" alt="Menu">
+            </button>
+
+            <button id="temaBtn" class="botao-tema" aria-label="Alternar tema">
+                <svg class="sol" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2 M12 20v2 M4.93 4.93l1.42 1.42 M17.65 17.65l1.42 1.42 M2 12h2 M20 12h2 M4.93 19.07l1.42-1.42 M17.65 6.35l1.42-1.42"></path>
+                </svg>
+
+                <svg class="lua" viewBox="0 0 24 24">
+                    <path d="M20 15.5A8.5 8.5 0 0 1 8.5 4 8.5 8.5 0 1 0 20 15.5Z"></path>
+                </svg>
+            </button>
+
+        </div>
+
+        <nav class="menu" id="menuNavegacao">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="conta.html">Entrar</a>
+            <a href="conta.html">Criar conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="dados.html">Minha Conta</a>
+        </nav>
+
+    </header>
+
+
+    <main class="pagina-conta">
+
+        <div class="titulo-pagina">
+            <span>ÁREA DO CLIENTE</span>
+            <h1>Minha Conta</h1>
+            <p>Consulte e gerencie suas informações.</p>
+        </div>
+
+
+        <div class="estrutura-conta">
+
+            <aside class="menu-conta">
+
+                <h2>Minha conta</h2>
+
+                <button class="opcao-conta ativa" data-aba="dados">
+                    <span>♙</span>
+                    Meus Dados
+                </button>
+
+                <button class="opcao-conta" data-aba="enderecos">
+                    <span>⌖</span>
+                    Endereços
+                </button>
+
+                <button class="opcao-conta" data-aba="pedidos">
+                    <span>▤</span>
+                    Pedidos
+                </button>
+
+                <button class="opcao-conta" data-aba="pagamentos">
+                    <span>▣</span>
+                    Formas de Pagamento
+                </button>
+
+                <button class="opcao-conta" data-aba="senha">
+                    <span>♧</span>
+                    Alterar Senha
+                </button>
+
+            </aside>
+
+
+            <section class="painel-conta">
+
+                <div class="conteudo-aba ativo" id="aba-dados">
+
+                    <div class="cabecalho-painel">
+                        <h2>Meus Dados</h2>
+                        <p>Informações pessoais da sua conta.</p>
+                    </div>
+
+                    <form id="formMeusDados">
+
+                        <div class="campos-dados">
+
+                            <div class="campo-dados campo-completo">
+                                <label for="nomeCompleto">Nome completo</label>
+                                <input type="text" id="nomeCompleto" placeholder="Digite seu nome completo" required>
+                            </div>
+
+                            <div class="campo-dados">
+                                <label for="emailDados">E-mail</label>
+                                <input type="email" id="emailDados" placeholder="seuemail@email.com" required>
+                            </div>
+
+                            <div class="campo-dados">
+                                <label for="telefoneDados">Telefone</label>
+                                <input type="tel" id="telefoneDados" placeholder="(00) 00000-0000" maxlength="15">
+                            </div>
+
+                            <div class="campo-dados">
+                                <label for="cepDados">CEP</label>
+                                <input type="text" id="cepDados" placeholder="00000-000" maxlength="9">
+                            </div>
+
+                            <div class="campo-dados">
+                                <label for="bairroDados">Bairro</label>
+                                <input type="text" id="bairroDados" placeholder="Digite seu bairro">
+                            </div>
+
+                            <div class="campo-dados campo-completo">
+                                <label for="enderecoDados">Endereço</label>
+                                <input type="text" id="enderecoDados" placeholder="Rua, avenida, número e complemento">
+                            </div>
+
+                            <div class="campo-dados">
+                                <label for="cidadeDados">Cidade</label>
+                                <input type="text" id="cidadeDados" placeholder="Digite sua cidade">
+                            </div>
+
+                            <div class="campo-dados">
+                                <label for="estadoDados">Estado</label>
+                                <input type="text" id="estadoDados" placeholder="Ex.: Minas Gerais">
+                            </div>
+
+                        </div>
+
+                        <p class="mensagem-dados" id="mensagemDados"></p>
+
+                        <button type="submit" class="botao-salvar">
+                            Salvar alterações
+                        </button>
+
+                    </form>
+
+                </div>
+
+
+                <div class="conteudo-aba" id="aba-enderecos">
+
+                    <div class="cabecalho-painel">
+                        <h2>Meus Endereços</h2>
+                        <p>Confira o endereço informado nos seus dados pessoais.</p>
+                    </div>
+
+                    <div class="cartao-informacao">
+                        <h3>Endereço principal</h3>
+                        <p id="enderecoResumo">Nenhum endereço cadastrado.</p>
+                        <button class="botao-secundario" data-ir-dados>
+                            Editar meus dados
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div class="conteudo-aba" id="aba-pedidos">
+
+                    <div class="cabecalho-painel">
+                        <h2>Meus Pedidos</h2>
+                        <p>Acompanhe seus pedidos realizados.</p>
+                    </div>
+
+                    <div class="estado-vazio">
+                        <span>▤</span>
+                        <h3>Nenhum pedido encontrado</h3>
+                        <p>Quando você realizar um pedido, ele aparecerá aqui.</p>
+                        <a href="cardapio.html" class="botao-salvar">Ver cardápio</a>
+                    </div>
+
+                </div>
+
+
+                <div class="conteudo-aba" id="aba-pagamentos">
+
+                    <div class="cabecalho-painel">
+                        <h2>Formas de Pagamento</h2>
+                        <p>Confira as opções de pagamento disponíveis.</p>
+                    </div>
+
+                    <div class="lista-pagamentos">
+
+                        <div class="item-pagamento">
+                            <span class="icone-pagamento">◆</span>
+                            <div>
+                                <h3>Pix</h3>
+                                <p>Pagamento rápido e prático.</p>
+                            </div>
+                        </div>
+
+                        <div class="item-pagamento">
+                            <span class="icone-pagamento">▣</span>
+                            <div>
+                                <h3>Cartão de crédito ou débito</h3>
+                                <p>Disponível conforme as opções de pagamento no pedido.</p>
+                            </div>
+                        </div>
+
+                        <div class="item-pagamento">
+                            <span class="icone-pagamento">R$</span>
+                            <div>
+                                <h3>Dinheiro</h3>
+                                <p>Pagamento na entrega, quando disponível.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="conteudo-aba" id="aba-senha">
+
+                    <div class="cabecalho-painel">
+                        <h2>Alterar Senha</h2>
+                        <p>Atualize a senha de acesso à sua conta.</p>
+                    </div>
+
+                    <form id="formAlterarSenha">
+
+                        <div class="campo-dados">
+                            <label for="senhaAtual">Senha atual</label>
+                            <input type="password" id="senhaAtual" placeholder="Digite sua senha atual" required>
+                        </div>
+
+                        <div class="campo-dados">
+                            <label for="novaSenha">Nova senha</label>
+                            <input type="password" id="novaSenha" placeholder="Digite a nova senha" required>
+                        </div>
+
+                        <div class="campo-dados">
+                            <label for="confirmarNovaSenha">Confirmar nova senha</label>
+                            <input type="password" id="confirmarNovaSenha" placeholder="Confirme a nova senha" required>
+                        </div>
+
+                        <p class="mensagem-dados" id="mensagemSenha"></p>
+
+                        <button type="submit" class="botao-salvar">
+                            Atualizar senha
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+
+        <div class="rodape-linha">
+
+            <div class="logo">
+                <img src="Imagens/logo.png" data-imagem="logo" alt="La Bella Pizza">
+            </div>
+
+            <div class="redes">
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <img src="Imagens/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="#" target="_blank" aria-label="Facebook">
+                    <img src="Imagens/facebook.png" alt="Facebook">
+                </a>
+
+                <a href="#" target="_blank" aria-label="WhatsApp">
+                    <img src="Imagens/whatsapp.png" alt="WhatsApp">
+                </a>
+            </div>
+
+            <div class="endereco">
+                <img src="Imagens/localizacao.png" alt="Localização">
+                <p>Av. Itália, 240 · Belo Horizonte - MG</p>
+            </div>
+
+        </div>
+
+        <p>© 2026 La Bella Pizza. Todos os direitos reservados.</p>
+
+    </footer>
+
+        <script src="dados.js" defer></script>
+
+
+</body>
+</html>

@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio | La Bella Pizza</title>
+
+    <link rel="stylesheet" href="cardapio.css">
+    <script src="cardapio.js" defer></script>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <a href="index.html" class="logo">
+            <img data-imagem="logo" alt="La Bella Pizza">
+        </a>
+
+        <div class="acoes">
+
+            <a href="#sabores" class="botao contorno">
+                Peça agora
+            </a>
+
+            <a href="carrinho.html" class="icone-link">
+                <img data-imagem="carrinho" alt="Carrinho">
+            </a>
+
+            <button class="botao-menu" id="menuBtn">
+                <img data-imagem="menu" alt="Menu">
+            </button>
+
+            <button class="botao-tema" id="temaBtn"
+                    aria-label="Alternar tema">
+
+                <svg class="sol" viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="4"/>
+                    <path d="M12 2v2 M12 20v2 M2 12h2 M20 12h2
+                    M4.9 4.9l1.4 1.4 M17.7 17.7l1.4 1.4
+                    M4.9 19.1l1.4-1.4 M17.7 6.3l1.4-1.4"/>
+                </svg>
+
+                <svg class="lua" viewBox="0 0 24 24">
+                    <path d="M20.9 13A9 9 0 0 1 11 3.1
+                    9 9 0 1 0 20.9 13Z"/>
+                </svg>
+
+            </button>
+
+        </div>
+
+        <nav class="menu" id="menuNavegacao">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="conta.html">Entrar</a>
+            <a href="conta.html">Criar conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="dados.html">Minha Conta</a>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <section class="banner-cardapio">
+
+            <img class="banner-foto"
+                 data-imagem="ImagemPrincipal"
+                 alt="Pizzas artesanais">
+
+            <div class="sombra-banner"></div>
+
+            <div class="banner-texto revelar">
+
+                <span>LA BELLA PIZZA</span>
+
+                <h1>
+                    Nosso cardápio
+                </h1>
+
+                <p>
+                    Sabores especiais, ingredientes selecionados
+                    e o verdadeiro sabor da tradição italiana.
+                </p>
+
+                <a href="#sabores" class="botao vermelho">
+                    Conheça nossos sabores ›
+                </a>
+
+            </div>
+
+            <img class="bandeira"
+                 data-imagem="miniBandeiraItaliana"
+                 alt="Bandeira italiana">
+
+        </section>
+
+
+        <section class="introducao revelar">
+
+            <span>— FEITO COM CARINHO —</span>
+
+            <h2>Uma experiência a cada fatia.</h2>
+
+            <p>
+                Escolha entre nossos sabores preparados
+                artesanalmente para proporcionar momentos especiais.
+            </p>
+
+        </section>
+
+
+        <section class="cardapio" id="sabores">
+
+            <div class="titulo revelar">
+
+                <span>— NOSSAS PIZZAS —</span>
+
+                <h2>Escolha seu sabor favorito</h2>
+
+                <p>
+                    Encontre a pizza perfeita para o seu momento.
+                </p>
+
+            </div>
+
+
+            <div class="pesquisa revelar">
+
+                <input
+                    type="search"
+                    id="buscaPizza"
+                    class="busca-pizza"
+                    placeholder="Buscar pizza..."
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+            <div class="filtros revelar">
+
+                <button class="filtro ativo" data-filtro="todas">
+                    Todas
+                </button>
+
+                <button class="filtro" data-filtro="tradicionais">
+                    Tradicionais
+                </button>
+
+                <button class="filtro" data-filtro="especiais">
+                    Especiais
+                </button>
+
+            </div>
+
+
+            <div class="grade-pizzas">
+
+
+                                <article class="pizza revelar"
+                        data-nome="margherita"
+                        data-categoria="tradicionais">
+
+                    <img data-imagem="margherita"
+                        alt="Pizza Margherita">
+
+                    <div class="pizza-conteudo">
+
+                        <span class="categoria">
+                            Tradicional
+                        </span>
+
+                        <h3>Margherita</h3>
+
+                        <p>
+                            Molho de tomate, muçarela,
+                            tomate e manjericão.
+                        </p>
+
+                        <div class="pizza-rodape">
+                            <strong>R$ 49,90</strong>
+
+                            <a href="carrinho.html"
+                            class="adicionar-carrinho"
+                            data-nome="Margherita"
+                            data-preco="49.90">
+                            Adicionar ao carrinho ›
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                                <article class="pizza revelar"
+                        data-nome="calabresa"
+                        data-categoria="tradicionais">
+
+                    <img data-imagem="Calabresa"
+                        alt="Pizza Calabresa">
+
+                    <div class="pizza-conteudo">
+
+                        <span class="categoria">
+                            Tradicional
+                        </span>
+
+                        <h3>Calabresa</h3>
+
+                        <p>
+                            Molho de tomate, muçarela,
+                            calabresa e cebola.
+                        </p>
+
+                        <div class="pizza-rodape">
+                            <strong>R$ 52,90</strong>
+
+                            <a href="carrinho.html"
+                            class="adicionar-carrinho"
+                            data-nome="Calabresa"
+                            data-preco="52.90">
+                            Adicionar ao carrinho ›
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                                <article class="pizza revelar"
+                        data-nome="prosciutto"
+                        data-categoria="especiais">
+
+                    <img data-imagem="prosciutto"
+                        alt="Pizza Prosciutto">
+
+                    <div class="pizza-conteudo">
+
+                        <span class="categoria">
+                            Especial
+                        </span>
+
+                        <h3>Prosciutto</h3>
+
+                        <p>
+                            Molho de tomate, muçarela,
+                            presunto especial e orégano.
+                        </p>
+
+                        <div class="pizza-rodape">
+                            <strong>R$ 59,90</strong>
+
+                            <a href="carrinho.html"
+                            class="adicionar-carrinho"
+                            data-nome="Prosciutto"
+                            data-preco="59.90">
+                            Adicionar ao carrinho ›
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="pizza revelar"
+                        data-nome="quatro queijos"
+                        data-categoria="especiais">
+
+                    <img data-imagem="quatroQueijos"
+                        alt="Pizza Quatro Queijos">
+
+                    <div class="pizza-conteudo">
+
+                        <span class="categoria">
+                            Especial
+                        </span>
+
+                        <h3>Quatro queijos</h3>
+
+                        <p>
+                            Muçarela, parmesão,
+                            provolone e gorgonzola.
+                        </p>
+
+                        <div class="pizza-rodape">
+                            <strong>R$ 57,90</strong>
+
+                            <a href="carrinho.html"
+                            class="adicionar-carrinho"
+                            data-nome="Quatro queijos"
+                            data-preco="57.90">
+                            Adicionar ao carrinho ›
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="pizza revelar"
+                        data-nome="portuguesa"
+                        data-categoria="tradicionais">
+
+                    <img data-imagem="portuguesa"
+                        alt="Pizza Portuguesa">
+
+                    <div class="pizza-conteudo">
+
+                        <span class="categoria">
+                            Tradicional
+                        </span>
+
+                        <h3>Portuguesa</h3>
+
+                        <p>
+                            Molho de tomate, muçarela,
+                            presunto, ovo, cebola e azeitona.
+                        </p>
+
+                        <div class="pizza-rodape">
+                            <strong>R$ 59,90</strong>
+
+                            <a href="carrinho.html"
+                            class="adicionar-carrinho"
+                            data-nome="Portuguesa"
+                            data-preco="59.90">
+                            Adicionar ao carrinho ›
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+               <article class="pizza revelar"
+                        data-nome="frango com catupiry"
+                        data-categoria="especiais">
+
+                    <img data-imagem="frangoCatupiry"
+                        alt="Pizza Frango com Catupiry">
+
+                    <div class="pizza-conteudo">
+
+                        <span class="categoria">
+                            Especial
+                        </span>
+
+                        <h3>Frango com Catupiry</h3>
+
+                        <p>
+                            Molho de tomate, frango desfiado
+                            e Catupiry.
+                        </p>
+
+                        <div class="pizza-rodape">
+                            <strong>R$ 56,90</strong>
+
+                            <a href="carrinho.html"
+                            class="adicionar-carrinho"
+                            data-nome="Frango com Catupiry"
+                            data-preco="56.90">
+                            Adicionar ao carrinho ›
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+                <article class="pizza revelar"
+                        data-nome="bacon"
+                        data-categoria="especiais">
+
+                    <img data-imagem="bacon"
+                        alt="Pizza Bacon">
+
+                    <div class="pizza-conteudo">
+
+                        <span class="categoria">
+                            Especial
+                        </span>
+
+                        <h3>Bacon</h3>
+
+                        <p>
+                            Molho de tomate, muçarela,
+                            bacon crocante e orégano.
+                        </p>
+
+                        <div class="pizza-rodape">
+                            <strong>R$ 57,90</strong>
+
+                            <a href="carrinho.html"
+                            class="adicionar-carrinho"
+                            data-nome="Bacon"
+                            data-preco="57.90">
+                            Adicionar ao carrinho ›
+                            </a>
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <article class="pizza revelar"
+                    data-nome="moda da casa"
+                    data-categoria="especiais">
+
+                <img data-imagem="modaDaCasa"
+                    alt="Pizza Moda da Casa">
+
+                <div class="pizza-conteudo">
+
+                    <span class="categoria">
+                        Especial
+                    </span>
+
+                    <h3>Moda da Casa</h3>
+
+                    <p>
+                        Molho de tomate, muçarela,
+                        presunto, bacon, cebola e azeitona.
+                    </p>
+
+                    <div class="pizza-rodape">
+                        <strong>R$ 62,90</strong>
+
+                        <a href="carrinho.html"
+                        class="adicionar-carrinho"
+                        data-nome="Moda da Casa"
+                        data-preco="62.90">
+                        Adicionar ao carrinho ›
+                        </a>
+                    </div>
+
+                </div>
+
+            </article>
+
+
+            </div>
+
+
+            <p id="semResultado" hidden>
+                Nenhuma pizza encontrada.
+            </p>
+
+        </section>
+
+
+        <section class="chamada revelar">
+
+            <span>LA BELLA PIZZA</span>
+
+            <h2>Seu próximo momento especial começa aqui.</h2>
+
+            <p>
+                Escolha seu sabor favorito e aproveite!
+            </p>
+
+            <a href="pedidos.html" class="botao vermelho">
+                Faça seu pedido ›
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer class="rodape">
+
+        <div class="rodape-linha">
+
+            <a href="index.html" class="logo">
+                <img data-imagem="logo" alt="La Bella Pizza">
+            </a>
+
+            <div class="redes">
+
+                <a href="#" aria-label="Instagram">
+                    <img data-imagem="instagram" alt="">
+                </a>
+
+                <a href="#" aria-label="Facebook">
+                    <img data-imagem="facebook" alt="">
+                </a>
+
+                <a href="#" aria-label="WhatsApp">
+                    <img data-imagem="whatsapp" alt="">
+                </a>
+
+            </div>
+
+            <div class="endereco">
+
+                <img data-imagem="localizacao" alt="">
+
+                Av. Itália, 240 · Belo Horizonte - MG
+
+            </div>
+
+        </div>
+
+        <p>
+            © 2026 La Bella Pizza. Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <script src="carrinho.js" defer></script>
+
+</body>
+</html>

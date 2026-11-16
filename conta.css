@@ -1,0 +1,360 @@
+
+
+.pagina-conta {
+    min-height: 650px;
+    padding: 75px 20px;
+    background: #102b20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.area-conta {
+    width: 100%;
+    max-width: 480px;
+}
+
+.titulo-conta {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #f5eedf;
+}
+
+.titulo-conta span {
+    color: #d6b878;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.titulo-conta h1 {
+    font-size: 38px;
+    margin: 12px 0;
+}
+
+.titulo-conta p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #d8d0c0;
+}
+
+.painel-conta {
+    background: #173a2a;
+    border: 1px solid #806b42;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.abas-conta {
+    display: flex;
+    border-bottom: 1px solid #806b42;
+    margin-bottom: 28px;
+}
+
+.aba-conta {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    background: transparent;
+    color: #d8d0c0;
+    font-size: 16px;
+    cursor: pointer;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s;
+}
+
+.aba-conta:hover,
+.aba-conta.ativa {
+    color: #e2c58b;
+    border-bottom-color: #d6b878;
+}
+
+.form-conta h2 {
+    color: #f5eedf;
+    font-size: 25px;
+    margin-bottom: 7px;
+}
+
+.descricao-form {
+    color: #c9c0ad;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.form-conta > label {
+    display: block;
+    color: #e2c58b;
+    font-size: 14px;
+    margin: 17px 0 8px;
+}
+
+.form-conta > input,
+.campo-senha input {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #806b42;
+    border-radius: 7px;
+    background: #102b20;
+    color: #f5eedf;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-conta input:focus {
+    border-color: #e2c58b;
+    box-shadow: 0 0 0 2px rgba(214, 184, 120, 0.15);
+}
+
+.form-conta input::placeholder {
+    color: #a9a18f;
+}
+
+.campo-senha {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.campo-senha input {
+    padding-right: 75px;
+}
+
+.mostrar-senha {
+    position: absolute;
+    right: 12px;
+    border: none;
+    background: transparent;
+    color: #e2c58b;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.opcoes-login {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin: 18px 0 23px;
+    flex-wrap: wrap;
+}
+
+.lembrar {
+    color: #d8d0c0;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.link-conta,
+.troca-formulario button {
+    border: none;
+    background: transparent;
+    color: #e2c58b;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.link-conta:hover,
+.troca-formulario button:hover {
+    text-decoration: underline;
+}
+
+.botao-conta {
+    width: 100%;
+    margin-top: 22px;
+    padding: 14px;
+    cursor: pointer;
+    border: none;
+    font-size: 15px;
+}
+
+.mensagem-conta {
+    min-height: 20px;
+    margin-top: 13px;
+    text-align: center;
+    font-size: 13px;
+    color: #e2c58b;
+}
+
+.troca-formulario {
+    margin-top: 22px;
+    text-align: center;
+    color: #d8d0c0;
+    font-size: 13px;
+}
+
+.troca-formulario button {
+    font-weight: bold;
+}
+
+.escondido {
+    display: none;
+}
+
+
+
+body.modo-claro .pagina-conta {
+    background: #f4f5fb;
+}
+
+body.modo-claro .titulo-conta {
+    color: #21183c;
+}
+
+body.modo-claro .titulo-conta p {
+    color: #5e586c;
+}
+
+body.modo-claro .painel-conta {
+    background: #ffffff;
+    border-color: #dedbed;
+    box-shadow: 0 12px 35px rgba(30, 20, 50, 0.10);
+}
+
+body.modo-claro .abas-conta {
+    border-color: #dedbed;
+}
+
+body.modo-claro .aba-conta {
+    color: #5e586c;
+}
+
+body.modo-claro .aba-conta:hover,
+body.modo-claro .aba-conta.ativa {
+    color: #6d3ab2;
+    border-bottom-color: #6d3ab2;
+}
+
+body.modo-claro .form-conta h2 {
+    color: #21183c;
+}
+
+body.modo-claro .descricao-form,
+body.modo-claro .lembrar,
+body.modo-claro .troca-formulario {
+    color: #5e586c;
+}
+
+body.modo-claro .form-conta > label {
+    color: #49316f;
+}
+
+body.modo-claro .form-conta > input,
+body.modo-claro .campo-senha input {
+    background: #f4f5fb;
+    color: #21183c;
+    border-color: #dedbed;
+}
+
+body.modo-claro .form-conta input::placeholder {
+    color: #898397;
+}
+
+body.modo-claro .mostrar-senha,
+body.modo-claro .link-conta,
+body.modo-claro .troca-formulario button {
+    color: #6d3ab2;
+}
+
+body.modo-claro .mensagem-conta {
+    color: #49316f;
+}
+
+
+
+@media (max-width: 600px) {
+
+    .pagina-conta {
+        padding: 45px 15px;
+        min-height: 600px;
+    }
+
+    .titulo-conta h1 {
+        font-size: 30px;
+    }
+
+    .painel-conta {
+        padding: 22px 18px;
+    }
+
+    .opcoes-login {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
+
+
+
+.pagina-conta {
+    width: 100%;
+    background-color: #102b20;
+    color: #f5eedf;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+body:not(.modo-escuro) .pagina-conta {
+    background: #f4f5fb !important;
+    color: #21183c;
+}
+
+body:not(.modo-escuro) .titulo-conta {
+    color: #21183c;
+}
+
+body:not(.modo-escuro) .titulo-conta p,
+body:not(.modo-escuro) .descricao-form,
+body:not(.modo-escuro) .lembrar,
+body:not(.modo-escuro) .troca-formulario {
+    color: #5e586c;
+}
+
+body:not(.modo-escuro) .painel-conta {
+    background: #ffffff;
+    border-color: #dedbed;
+}
+
+body:not(.modo-escuro) .form-conta h2 {
+    color: #21183c;
+}
+
+body:not(.modo-escuro) .form-conta > label {
+    color: #49316f;
+}
+
+body:not(.modo-escuro) .form-conta > input,
+body:not(.modo-escuro) .campo-senha input {
+    background: #f4f5fb;
+    color: #21183c;
+    border-color: #dedbed;
+}
+
+body:not(.modo-escuro) .form-conta input::placeholder {
+    color: #898397;
+}
+
+body:not(.modo-escuro) .aba-conta {
+    color: #5e586c;
+}
+
+body:not(.modo-escuro) .aba-conta:hover,
+body:not(.modo-escuro) .aba-conta.ativa {
+    color: #6d3ab2;
+    border-bottom-color: #6d3ab2;
+}
+
+body:not(.modo-escuro) .mostrar-senha,
+body:not(.modo-escuro) .link-conta,
+body:not(.modo-escuro) .troca-formulario button {
+    color: #6d3ab2;
+}
+
+body:not(.modo-escuro) .mensagem-conta {
+    color: #49316f;
+}
+

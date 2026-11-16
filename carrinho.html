@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Carrinho | La Bella Pizza</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="carrinho.css">
+
+    <script src="script.js" defer></script>
+    <script src="carrinho.js" defer></script>
+</head>
+
+<body>
+
+
+    <header class="cabecalho">
+
+        <a href="index.html" class="logo">
+            <img src="Imagens/logo.png" data-imagem="logo" alt="La Bella Pizza">
+        </a>
+
+        <div class="acoes">
+
+            <a href="cardapio.html#sabores" class="botao contorno">
+                Peça agora
+            </a>
+
+            <a href="carrinho.html" class="icone-link">
+                <img src="Imagens/carrinho.png" data-imagem="carrinho" alt="Carrinho">
+            </a>
+
+            <button id="menuBtn" class="botao-menu" aria-label="Abrir menu">
+                <img src="Imagens/menu.png" data-imagem="menu" alt="Menu">
+            </button>
+
+            <button id="temaBtn" class="botao-tema" aria-label="Alternar tema">
+
+                <svg class="sol" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="4"></circle>
+                    <path d="M12 2v2 M12 20v2 M4.93 4.93l1.42 1.42
+                    M17.65 17.65l1.42 1.42 M2 12h2 M20 12h2
+                    M4.93 19.07l1.42-1.42 M17.65 6.35l1.42-1.42">
+                    </path>
+                </svg>
+
+                <svg class="lua" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2">
+                    <path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5
+                    A8.5 8.5 0 1 0 20.5 14.5Z">
+                    </path>
+                </svg>
+
+            </button>
+
+        </div>
+
+        <nav class="menu" id="menuNavegacao">
+            <a href="index.html">Início</a>
+            <a href="cardapio.html">Cardápio</a>
+            <a href="pedidos.html">Pedidos</a>
+            <a href="conta.html">Entrar</a>
+            <a href="conta.html">Criar conta</a>
+            <a href="carrinho.html">Carrinho</a>
+            <a href="dados.html">Minha Conta</a>
+        </nav>
+
+    </header>
+
+
+
+    <main class="pagina-carrinho">
+
+        <section class="titulo-carrinho revelar">
+
+            <span class="subtitulo">LA BELLA PIZZA</span>
+
+            <h1>Meu carrinho</h1>
+
+            <p>
+                Confira seus sabores favoritos antes de finalizar o pedido.
+            </p>
+
+        </section>
+
+
+        <section class="conteudo-carrinho revelar">
+
+            <div class="lista-carrinho">
+
+                <div class="cabecalho-lista">
+                    <h2>Seus produtos</h2>
+                    <span id="quantidadeItens">0</span>
+                </div>
+
+                <div id="itensCarrinho"></div>
+
+                <div id="carrinhoVazio" class="carrinho-vazio" hidden>
+
+                    <div class="icone-vazio">🛒</div>
+
+                    <h3>Seu carrinho está vazio</h3>
+
+                    <p>
+                        Que tal escolher uma pizza deliciosa?
+                    </p>
+
+                    <a href="cardapio.html" class="botao-carrinho">
+                        Explorar cardápio
+                    </a>
+
+                </div>
+
+                <button id="limparCarrinho" class="limpar-carrinho" hidden>
+                    Limpar carrinho
+                </button>
+
+            </div>
+
+
+
+            <aside class="resumo-carrinho">
+
+                <h2>Resumo do pedido</h2>
+
+                <div class="linha-resumo">
+                    <span>Produtos</span>
+                    <strong id="subtotal">R$ 0,00</strong>
+                </div>
+
+                <div class="linha-resumo">
+                    <span>Entrega</span>
+                    <strong>A calcular</strong>
+                </div>
+
+                <div class="linha-resumo total">
+                    <span>Total dos produtos</span>
+                    <strong id="total">R$ 0,00</strong>
+                </div>
+
+                <p class="aviso-entrega">
+                    O valor da entrega será definido na etapa de finalização.
+                </p>
+
+                <button id="finalizarPedido" class="finalizar-pedido" disabled>
+                    Finalizar pedido
+                </button>
+
+                <a href="cardapio.html" class="continuar-comprando">
+                    Continuar comprando
+                </a>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+
+    <footer class="rodape">
+
+        <div class="rodape-linha">
+
+            <div class="logo">
+                <img src="Imagens/logo.png" data-imagem="logo" alt="La Bella Pizza">
+            </div>
+
+            <div class="redes">
+
+                <a href="#" target="_blank" aria-label="Instagram">
+                    <img src="Imagens/instagram.png" alt="Instagram">
+                </a>
+
+                <a href="#" target="_blank" aria-label="Facebook">
+                    <img src="Imagens/facebook.png" alt="Facebook">
+                </a>
+
+                <a href="#" target="_blank" aria-label="WhatsApp">
+                    <img src="Imagens/whatsapp.png" alt="WhatsApp">
+                </a>
+
+            </div>
+
+            <div class="endereco">
+                <img src="Imagens/localizacao.png" alt="Localização">
+                <p>Av. Itália, 240 · Belo Horizonte - MG</p>
+            </div>
+
+        </div>
+
+        <p>© 2026 La Bella Pizza. Todos os direitos reservados.</p>
+
+    </footer>
+
+</body>
+</html>
